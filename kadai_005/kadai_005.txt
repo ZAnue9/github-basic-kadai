@@ -1,0 +1,38 @@
+tutuj@FirstPC MINGW64 /c/samurai (main)
+$ mkdir git_challenge
+
+tutuj@FirstPC MINGW64 /c/samurai (main)
+$ cd git_challenge
+
+tutuj@FirstPC MINGW64 /c/samurai/git_challenge (main)
+$ echo "Hello,world!" >> hello_world.txtd
+
+tutuj@FirstPC MINGW64 /c/samurai/git_challenge (main)
+$ git add .
+warning: in the working copy of 'git_challenge/hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+tutuj@FirstPC MINGW64 /c/samurai/git_challenge (main)
+$ git commit -m"hello_world.txtの追加"
+[main (root-commit) ad57b47] hello_world.txtの追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 git_challenge/hello_world.txt
+
+tutuj@FirstPC MINGW64 /c/samurai/git_challenge (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello_world.txt
+
+tutuj@FirstPC MINGW64 /c/samurai/git_challenge (main)
+$ git add .
+
+tutuj@FirstPC MINGW64 /c/samurai/git_challenge (main)
+$ git commit -m"日本語訳の追加"
+[main 1a2740a] 日本語訳の追加
+ 1 file changed, 1 insertion(+)
+
+tutuj@FirstPC MINGW64 /c/samurai/git_challenge (main)
+$ git log --oneline
+1a2740a (HEAD -> main) 日本語訳の追加
+ad57b47 hello_world.txtの追加
